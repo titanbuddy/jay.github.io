@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+$main-color: #03045E;
+$white: #fff;
+$light-blue: #00B4D8;
+$cursor: pointer;
+// navbar  start
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    .logo {
+        width: 50px;
+        height: 50px;
+        background: $main-color;
+        border: 2px solid black;
+        position: relative;
+        .logo-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+    }
+}
+.btn {
+    padding: 12px 23px;
+    border-radius: 10000px;
+    border: 0;
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    cursor: $cursor;
+}
+.btn-navbar {
+    background: $main-color;
+}
+// navbar  end
+.hero {
+    text-align: center;
+    margin-top: 15px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/almas-salakhov-I9lsagW0TAk-unsplash.jpg') no-repeat center;
+    background-attachment: scroll;
+    .hero-text {
+        max-width: 650px;
+        margin: auto;
+        h2 {
+            font-size: 30px;
+            position: relative;
+            margin: auto auto 16px auto;
+            display: inline-block;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                width: 0%;
+                height: 2px;
+                transform: translateX(-50%);
+                background: $main-color;
+                transition: .4s width, .4s background;
+            }
+            &:hover::after {
+                width: 100%;
+                background: $light-blue;
+            }
+
+        }
+        p {
+            background: linear-gradient(to right, $main-color, $light-blue);
+            font-size: .9rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.btn-hero {
+    background: red;
+    margin-top: 15px;
+}
+.form {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.form-container form{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+
+    input,textarea {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px 15px;
+    }
+}

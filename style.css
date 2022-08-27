@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px;
+}
+
+.navbar .logo {
+  width: 50px;
+  height: 50px;
+  background: #03045E;
+  border: 2px solid black;
+  position: relative;
+}
+
+.navbar .logo .logo-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.btn {
+  padding: 12px 23px;
+  border-radius: 10000px;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+.btn-navbar {
+  background: #03045E;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 15px;
+  height: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("/images/almas-salakhov-I9lsagW0TAk-unsplash.jpg") no-repeat center;
+  background-attachment: scroll;
+}
+
+.hero .hero-text {
+  max-width: 650px;
+  margin: auto;
+}
+
+.hero .hero-text h2 {
+  font-size: 30px;
+  position: relative;
+  margin: auto auto 16px auto;
+  display: inline-block;
+}
+
+.hero .hero-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #03045E;
+  -webkit-transition: .4s width, .4s background;
+  transition: .4s width, .4s background;
+}
+
+.hero .hero-text h2:hover::after {
+  width: 100%;
+  background: #00B4D8;
+}
+
+.hero .hero-text p {
+  background: -webkit-gradient(linear, left top, right top, from(#03045E), to(#00B4D8));
+  background: linear-gradient(to right, #03045E, #00B4D8);
+  font-size: .9rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-hero {
+  background: red;
+  margin-top: 15px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container form input, .form-container form textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+}
+/*# sourceMappingURL=style.css.map */
